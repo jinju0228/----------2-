@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/get.css">
+    <link rel="stylesheet" href="../css/introduction.css">
+    <link rel="stylesheet" href="../css/notice_contents.css">
+    <link rel="stylesheet" href="../css/notice_write.css">
+    <link rel="stylesheet" href="../css/notice.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="../css/m_menu.css">
+
+</head>
+<body>
+    <header>
+        <div class="h_top">
+            <div class="logo"><a href="/"></a></div>
+            <ul class="menu">
+                <li><a href="introduction">야시장소개</a></li>
+                <li><a href="get">먹거리살거리</a></li>
+                <li><a href="">서문거리예술문화</a></li>
+                <li><a href="notice">참여마당</a></li>
+                <li><a href="">입점신청</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="login">로그인</a></li>
+                <li><a href="join">회원가입</a></li>
+            </ul>
+            <div class="m_menu"><a href="m_menu"></a></div>
+        </div>
+    </header>
+    <main>
+        <%- body %>
+        <!--ejs사용법-->
+    </main>
+    <footer>
+        <div class="foot_top">
+            <div class="f_wrap">
+                <div class="f_menu"><a href="notice">NOTICE</a></div>
+                <div class="f_title" onclick="javascript:location.href = '/notice_contents?noticeNumber=1'">2021년 2차 야시장 매대운영자 모집 연장</div>
+                <div class="f_go"><a href="notice">→</a></div>
+            </div>
+            <div class="f_wrap">
+                <div class="f_menu"><a href="">NEWS</a></div>
+                <div class="f_title">'서문시장 야시장'의 '친절의 신'에 선정된 특별한 매대들</div>
+                <div class="f_go"><a href="">→</a></div>
+            </div>
+        </div>
+        <ul class="foot_middle">
+           <li><a class=img1 href=""><img src="../img/f1.png"></a></li>
+           <li><a class=img2 href=""><img src="../img/f2.png"></a></li>
+           <li><a class=img3 href=""><img src="../img/f3.png"></a></li>
+           <li><a class=img4 href=""><img src="../img/f4.jpg"></a></li>
+           <li><a class=img5 href=""><img src="../img/f5.png"></a></li>
+        </ul>
+        <div class="foot_bottom">
+            <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀 Admin</p>
+            <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+main{
+    width:1440px;
+    /* padding:0 20px; */
+    box-sizing: border-box;
+    margin:auto;
+}
+section{
+    width:100%;
+    box-sizing: border-box;
+    margin:auto;
+
+}
+.write{
+    padding:60px 0;
+
+}
+.write>h2{
+    font-size:24px;
+    font-weight:bold;
+    text-align: center;
+    line-height:80px;
+    background-color: #283150;
+    color:#fff;
+
+}
+.noti_form{
+    width:1200px;
+    margin:auto;
+    padding:10px 0 70px;
+}
+
+table{
+    width:83.055%;
+    margin:auto;
+    border:1px solid #C5B7B7;    
+    color:#3D3D3D;
+}
+
+td{
+    font-size:16px;
+    padding:20px 10px;
+    border:1px solid #C5B7B7;  
+}
+.label{
+    width:200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.label>label{
+    font-weight:bold;
+    margin:auto;
+}
+#Not_Title{
+    width:100%;
+    height:50px;
+    padding:10px 20px;
+    box-sizing: border-box;
+    outline-style: none;
+}
+#Not_Content{
+    width:100%;
+    height:500px;
+    padding:20px;
+    box-sizing: border-box;
+    outline-style: none;
+}
+input{
+    border: 1px solid #C5B7B7;
+    height:40px;
+}
+.submit{
+    float:right;
+    margin-top:10px;
+}
+.submit>a{
+    display:inline-block;
+    padding:0 15px;
+    line-height:40px;
+    background-color: #283150;
+    color:#fff;
+    border-radius: 4px;
+    font-size:16px;
+
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main{
+        width:100%;
+        /* padding:0 10px; */
+    }
+    .write{
+        padding:30px 0;
+    }
+    .write>h2{
+        font-size:21px;
+    }
+    .noti_form{
+        width: 98%;
+        box-sizing: border-box;
+        margin: 10px auto 20px;
+    }
+    
+    table{
+        width:90%;
+    }
+    .label{
+        width:100px;
+    }
+    
+    td{
+        font-size:14px;
+        padding:10px 10px;
+    }
+    textarea{
+        height:400px;
+        padding:15px;
+    }
+    .submit{
+        text-align: right;
+        margin:20px 5% 0 0;
+    }
+    .submit>a{
+        font-size:14px;
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    main{
+        padding:0;
+    }
+    .write{
+        padding:20px 0;
+    }
+    .write>h2{
+        font-size:18px;
+    }
+    .noti_form{
+        width: 98%;
+        box-sizing: border-box;
+        margin: 10px auto 20px;
+    }
+    table{
+        width:95%;
+    }
+    .label{
+        width:80px;
+    }
+    td{
+        font-size:12px;
+        padding:10px 10px;
+    }
+    textarea{
+        height:300px;
+        padding:10px;
+    }
+    .submit{
+        text-align: right;
+        margin:20px 2.5% 0 0;
+    }
+    .submit>a{
+        font-size:12px;
+    }
+}

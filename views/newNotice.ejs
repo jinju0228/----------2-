@@ -1,0 +1,54 @@
+
+        <div class="header_img"></div>
+        <nav>
+            <ul class="nav_menu">
+                <li><a href="notice">공지사항</a></li>
+                <li><a href="">행사안내</a></li>
+                <li><a href="">언론보도</a></li>                
+            </ul>
+        </nav>
+        <div class="write">
+            <h2>공지사항 작성</h2>
+        </div>
+        <section>
+            <% if(typeof errs !== 'undefined'){ %>
+                <% errs.forEach(() =>{ %>
+                    <h3><%=errs.param%> : <%=errs.msg%></h3>
+                <%})%>
+            <%}%>
+            <form class="noti_form" method="POST" action="/newNotice">
+                <table>
+                    <tr>
+                        <td class="label"><label>글쓴이</label></td>
+                        <td><input type="text" id="Not_Name" placeholder="관리자명을 입력하세요" name="noticeWritter"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>비밀번호</label></td>
+                        <td><input type="password" placeholder="비밀번호 6자리 입력하시오" id="Not_Password" name="noticePassword" ></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>제목</label></td>
+                        <td><input type="text" id="Not_Title" name="noticeTitle"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>내용</label></td>
+                        <td><textarea id="Not_Content" name="noticeContent"></textarea></td>
+                    </tr>
+                    <!-- <tr>
+                        <td class="label"><label>첨부파일</label></td>
+                        <td><input type="button" value="파일첨부" id="Not_Attach"></td>
+                    </tr> -->
+                    <tr>
+                        <td class="label"><label>날짜</label></td>
+                        <td><input type="text" placeholder="yyyy-mm-dd" id="Not_Date" name="noticeCreateDate"></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label>번호</label></td>
+                        <td><input type="hidden" placeholder="nn" id="Not_Number" name="noticeNumber"></td>
+                    </tr>
+                </table>
+                <input type="submit" class="submit" value="submit">
+                <!-- <div class="submit" type="submit" value="submit">등록</a></div> -->
+            </form>
+        </section>
+
