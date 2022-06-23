@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   password : '1bf1aaf1',
   port : '3306',
   database : 'heroku_e7eaa8c667b2543',
-  dateStrings:'datetime'
+  dateStrings:'date'
 });
  
 
