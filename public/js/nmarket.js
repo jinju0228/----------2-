@@ -3,6 +3,7 @@ Kakao.isInitialized();
 
 
 document.getElementById('logout').style.display = "none"
+document.getElementById('user').style.display = "none"
 
 function kakaoLogin(){
     Kakao.Auth.login({
@@ -11,6 +12,7 @@ function kakaoLogin(){
                 url:'/v2/user/me',
                 success: function (response) { 
                     console.log(response);
+                    document.getElementById('user').style.display = "block"
                     document.getElementById('user').innerText = response.kakao_account.profile.nickname;
                     document.getElementById('login').style.display = "none";
                     document.getElementById('logout').style.display = "block";
@@ -31,7 +33,7 @@ function kakaoLogout(){
                 console.log(response);
                 document.getElementById('user').style.display = "none";
                 document.getElementById('login').style.display = "block";
-                document.getElementById('logout').style.display = "none";
+                document.getElementById('logout').style.display = "none";                
                 alert('로그아웃 되었습니다.')
             }
         })

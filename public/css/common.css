@@ -48,13 +48,14 @@ header{
     font-weight:500;
     color:#3d3d3d;
 }
-.login{
+.login_logout{
     display:flex;
     position:absolute;
     top:24px;
     right:0;
+
 }
-.login>li>a{
+.login_logout>li>a{
     padding:0 15px;
     line-height:30px;
     border: 1px solid #C5B7B7;
