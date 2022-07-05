@@ -25,20 +25,21 @@ function kakaoLogin(){
 
 function kakaoLogout(){
     if (!Kakao.Auth.getAccessToken()) {
-        Kakao.API.request({
-            url:'/v1/user/unlink',
-            success: function (response) { 
-                console.log(response);
+        // Kakao.API.request({
+        //     url:'/v1/user/unlink',
+        //     success: function (response) { 
+        //         console.log(response);
                 document.getElementById('user').style.display = "none";
                 document.getElementById('login').style.display = "block";
                 document.getElementById('logout').style.display = "none";
                 alert('로그아웃 되었습니다.')
             }
-        })
+            Kakao.Auth.setAccessTocken(undefined)
+        }
 
-        Kakao.Auth.setAccessTocken(undefined)
-      }
+
+      
     //   Kakao.Auth.logout(function() {
     //     alert('logout ok\naccess token -> ' + Kakao.Auth.getAccessToken())
     //   })
-    }
+    
