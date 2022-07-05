@@ -24,7 +24,7 @@ function kakaoLogin(){
 
 
 function kakaoLogout(){
-    if (!Kakao.Auth.getAccessToken()) {
+    if (Kakao.Auth.getAccessToken()) {
         Kakao.API.request({
             url:'/v1/user/unlink',
             success: function (response) { 
