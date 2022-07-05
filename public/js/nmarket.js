@@ -2,7 +2,7 @@ Kakao.init('9e690ea3b0d9e5d9bf13d2f47c70063a');
 Kakao.isInitialized();
 
 
-// document.getElementById('logout').style.display = "none"
+ document.getElementById('logout').style.display = "none"
 
 function kakaoLogin(){
     Kakao.Auth.login({
