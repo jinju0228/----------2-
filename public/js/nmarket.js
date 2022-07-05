@@ -8,7 +8,7 @@ function kakaoLogin(){
                 url:'/v2/user/me',
                 success: function (response) { 
                     console.log(response);
-                // document.getElementById('user').innerText = response.kakao_account.profile.nickname;
+                    document.getElementById('user').innerText = response.kakao_account.profile.nickname;
                 }
             })
         }

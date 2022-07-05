@@ -53,8 +53,8 @@ header{
     position:absolute;
     top:24px;
     right:0;
-
-}.login>li>a{
+}
+.login>li>a{
     padding:0 15px;
     line-height:30px;
     border: 1px solid #C5B7B7;
