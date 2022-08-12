@@ -3,6 +3,16 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var path = require('path');
 
+
+// const http = require('https');
+
+// setInterval(function(){
+//     http.get("https://nightmarketseomun.herokuapp.com/");
+// },600000)//heroku10분동안 안꺼지게 해주는거 
+
+
+
+
 const router = require('./routes/route');
 
 const app = express()

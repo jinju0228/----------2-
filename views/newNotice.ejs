@@ -20,11 +20,11 @@
                 <table>
                     <tr>
                         <td class="label"><label>글쓴이</label></td>
-                        <td><input type="text" id="Not_Name" placeholder="관리자명을 입력하세요" name="noticeWritter"></td>
+                        <td><input type="text" id="Not_Name" placeholder="관리자명을 입력하세요" name="noticeWritter" class="new_no"></td>
                     </tr>
                     <tr>
                         <td class="label"><label>비밀번호</label></td>
-                        <td><input type="password" placeholder="비밀번호 6자리 입력하시오" id="Not_Password" name="noticePassword" ></td>
+                        <td><input type="password" placeholder="비밀번호 6자리 입력하시오" id="Not_Password" name="noticePassword" class="new_no"></td>
                     </tr>
                     <tr>
                         <td class="label"><label>제목</label></td>
@@ -38,17 +38,14 @@
                         <td class="label"><label>첨부파일</label></td>
                         <td><input type="button" value="파일첨부" id="Not_Attach"></td>
                     </tr> -->
-                    <tr>
-                        <td class="label"><label>날짜</label></td>
-                        <td><input type="text" placeholder="yyyy-mm-dd" id="Not_Date" name="noticeCreateDate"></td>
-                    </tr>
-                    <tr>
-                        <td class="label"><label>번호</label></td>
-                        <td><input type="hidden" placeholder="nn" id="Not_Number" name="noticeNumber"></td>
-                    </tr>
+                        <input type="hidden" placeholder="yyyy-mm-dd" id="Not_Date" name="noticeCreateDate">
+
+                    <input type="hidden" placeholder="nn" id="Not_Number" name="noticeNumber"></td>
+
                 </table>
-                <input type="submit" class="submit" value="submit">
+                <input type="submit" class="submit" value="글 게시">
                 <!-- <div class="submit" type="submit" value="submit">등록</a></div> -->
+                
             </form>
         </section>
 

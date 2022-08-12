@@ -1,12 +1,16 @@
 /*********************HEADER START******************************/
+
+body{
+    font-family: 'NanumBarunGothic';
+}
 header{
-    width:1440px;
+    width:100%;
     margin:auto;
     padding:0 20px;
     box-sizing: border-box;
 }
 .h_top{
-    width:1360px;
+    width:100%;
     margin:auto;
     box-sizing: border-box;
     background-color: #fff;
@@ -15,6 +19,7 @@ header{
 .h_top{
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 .logo>a{
     display:block;
@@ -32,8 +37,9 @@ header{
     position:absolute;
     left:50%;
     transform: translate(-50%);
-    width:calc(100% - 341px);
-    justify-content: center;
+    width:800px;
+    justify-content: space-between;
+    
 }
 .menu>li>a{
     padding:0 25px;
@@ -48,7 +54,8 @@ header{
     top:24px;
     right:0;
 
-}.login>li>a{
+}
+.login>li>a{
     padding:0 15px;
     line-height:30px;
     border: 1px solid #C5B7B7;
@@ -98,13 +105,17 @@ nav{
 /*****************FOOTER START******************/
 
 footer{
-    width:1440px;
+    width:100%;
     background-color:#283150;
     margin:20px auto 0;
     padding:20px 0;
 }
-.foot_top{
+.foot_inner{
     width:100%;
+    background-color: #fff;
+}
+.foot_top{
+    width:1440px;
     height:75px;
     padding:0 20px;
     background-color: #fff;
@@ -112,6 +123,7 @@ footer{
     box-sizing: border-box;
     align-items: center;
     border-bottom:1px solid #C5B7B7;
+    margin:auto;
 }
 .foot_top>div{
     width:50%;
@@ -173,7 +185,8 @@ footer{
     font-size:16px;
 }
 .foot_middle{
-    width:100%;
+    width:1440px;
+    margin:auto;
     height:55px;
     background-color:#fff;
     padding:10px 50px;
@@ -187,7 +200,8 @@ footer{
 }
 
 .foot_bottom{
-    width:100%;
+    width:1440px;
+    margin:auto;
     text-align: center;
     background-color:#fff;
     padding:10px 0;
